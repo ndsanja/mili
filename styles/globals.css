@@ -1,0 +1,181 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Olicy";
+    src: url("/Oliciy.woff") format("woff");
+  }
+
+  :root {
+    /**FONT SIZE**/
+    --font-display-large: clamp(
+      3.563rem,
+      calc(3.563rem + ((1vw - 0.2rem) * 2.312)),
+      5.875rem
+    );
+
+    --font-display-medium: clamp(
+      2.813rem,
+      calc(2.813rem + ((1vw - 0.2rem) * 2.25)),
+      5.063rem
+    );
+
+    --font-display-small: clamp(
+      2.25rem,
+      calc(2.25rem + ((1vw - 0.2rem) * 2.25)),
+      4.5rem
+    );
+
+    --font-headline-large: clamp(2rem, calc(2rem + ((1vw - 0.2rem) * 2)), 4rem);
+
+    --font-headline-medium: clamp(
+      1.75rem,
+      calc(1.75rem + ((1vw - 0.2rem) * 1.813)),
+      3.563rem
+    );
+
+    --font-headline-small: clamp(
+      1.5rem,
+      calc(1.5rem + ((1vw - 0.2rem) * 0.25)),
+      1.75rem
+    );
+
+    --font-title-large: clamp(
+      1.375rem,
+      calc(1.375rem + ((1vw - 0.2rem) * 0.125)),
+      1.5rem
+    );
+
+    --font-title-medium: clamp(
+      1rem,
+      calc(1rem + ((1vw - 0.2rem) * 0.125)),
+      1.125rem
+    );
+
+    --font-title-small: clamp(
+      0.875rem,
+      calc(0.875rem + ((1vw - 0.2rem) * 0.125)),
+      1rem
+    );
+
+    --font-label-large: clamp(
+      0.875rem,
+      calc(0.875rem + ((1vw - 0.2rem) * 0.125)),
+      1rem
+    );
+
+    --font-label-medium: clamp(
+      0.75rem,
+      calc(0.75rem + ((1vw - 0.2rem) * 0.125)),
+      0.875rem
+    );
+
+    --font-label-small: clamp(
+      0.688rem,
+      calc(0.688rem + ((1vw - 0.2rem) * 0.062)),
+      0.75rem
+    );
+
+    --font-body-large: clamp(
+      1rem,
+      calc(1rem + ((1vw - 0.2rem) * 0.125)),
+      1.125rem
+    );
+
+    --font-body-medium: clamp(
+      0.875rem,
+      calc(0.875rem + ((1vw - 0.2rem) * 0.125)),
+      1rem
+    );
+
+    --font-body-small: clamp(
+      0.75rem,
+      calc(0.75rem + ((1vw - 0.2rem) * 0.125)),
+      0.875rem
+    );
+    /*** END FONTS SIZE SYSTEM ***/
+
+    /*****LINE HEIGHT*****/
+    --line-height-display-large: clamp(
+      3.563rem,
+      calc(3.563rem + ((1vw - 0.2rem) * 3.312)),
+      6.875rem
+    );
+    --line-height-display-medium: clamp(
+      3.25rem,
+      calc(3.25rem + ((1vw - 0.2rem) * 1.875)),
+      5.125rem
+    );
+    --line-height-display-small: clamp(
+      2.75rem,
+      calc(2.75rem + ((1vw - 0.2rem) * 1.75)),
+      4.5rem
+    );
+
+    --line-height-headline-large: clamp(
+      2.5rem,
+      calc(2.5rem + ((1vw - 0.2rem) * 1.5)),
+      4rem
+    );
+    --line-height-headline-medium: clamp(
+      2.25rem,
+      calc(2.25rem + ((1vw - 0.2rem) * 1.313)),
+      3.563rem
+    );
+    --line-height-headline-small: clamp(
+      2rem,
+      calc(2rem + ((1vw - 0.2rem) * 0.375)),
+      2.375rem
+    );
+
+    --line-height-title-large: clamp(
+      1.75rem,
+      calc(1.75rem + ((1vw - 0.2rem) * 0.25)),
+      2rem
+    );
+    --line-height-title-medium: clamp(
+      1.5rem,
+      calc(1.5rem + ((1vw - 0.2rem) * 0.25)),
+      1.75rem
+    );
+    --line-height-title-small: clamp(
+      1.25rem,
+      calc(1.25rem + ((1vw - 0.2rem) * 0.125)),
+      1.375rem
+    );
+
+    --line-height-label-large: clamp(
+      1.25rem,
+      calc(1.25rem + ((1vw - 0.2rem) * 0.125)),
+      1.375rem
+    );
+    --line-height-label-medium: clamp(
+      1rem,
+      calc(1rem + ((1vw - 0.2rem) * 0.125)),
+      1.125rem
+    );
+    --line-height-label-small: clamp(
+      1rem,
+      calc(1rem + ((1vw - 0.2rem) * 0.125)),
+      1.125rem
+    );
+
+    --line-height-body-large: clamp(
+      1.5rem,
+      calc(1.5rem + ((1vw - 0.2rem) * 0.25)),
+      1.75rem
+    );
+    --line-height-body-medium: clamp(
+      1.25rem,
+      calc(1.25rem + ((1vw - 0.2rem) * 0.125)),
+      1.375rem
+    );
+    --line-height-body-small: clamp(
+      1rem,
+      calc(1rem + ((1vw - 0.2rem) * 0.125)),
+      1.125rem
+    );
+  }
+}
