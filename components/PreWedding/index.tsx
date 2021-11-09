@@ -9,22 +9,22 @@ const IndexPrewedding = () => {
     threshold: 0.15,
     triggerOnce: true,
   });
-  const leftAnimation = useAnimation();
+  const opacityAnimation = useAnimation();
   const rightAnimation = useAnimation();
 
   useEffect(() => {
     if (inView) {
-      leftAnimation.start({
+      opacityAnimation.start({
         opacity: 1,
-        x: 0,
+
         transition: {
-          delay: 0.1,
+          delay: 1.8,
           duration: 1.5,
         },
       });
       rightAnimation.start({
         opacity: 1,
-        x: 0,
+        y: 0,
         transition: {
           delay: 0.1,
           duration: 1.5,
@@ -32,16 +32,15 @@ const IndexPrewedding = () => {
       });
     }
     if (!inView) {
-      leftAnimation.start({
+      opacityAnimation.start({
         opacity: 0,
-        x: "-100vw",
       });
       rightAnimation.start({
         opacity: 0,
-        x: "+100vw",
+        y: "+100vh",
       });
     }
-  }, [inView, leftAnimation, rightAnimation]);
+  }, [inView, opacityAnimation, rightAnimation]);
   return (
     <>
       <div
@@ -49,7 +48,7 @@ const IndexPrewedding = () => {
         className="flex flex-col-reverse md:grid grid-cols-2 md:gap-4 mt-8 px-2 md:px-0"
       >
         <motion.div
-          animate={leftAnimation}
+          animate={opacityAnimation}
           className="bg-black w-full h-full relative"
         >
           <Image

@@ -8,7 +8,7 @@ import IndexWedding from "../components/Wedding";
 
 const Home: NextPage = () => {
   return (
-    <div className="container">
+    <div className="container max-w-max">
       <div className="h-full flex flex-col justify-center md:px-4 lg:px-8 pb-14">
         <Nav />
         <Hero />

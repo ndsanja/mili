@@ -10,23 +10,22 @@ const IndexWedding = () => {
     triggerOnce: true,
   });
   const leftAnimation = useAnimation();
-  const rightAnimation = useAnimation();
+  const opacityAnimation = useAnimation();
 
   useEffect(() => {
     if (inView) {
       leftAnimation.start({
         opacity: 1,
-        x: 0,
+        y: 0,
         transition: {
           delay: 0.1,
           duration: 1.5,
         },
       });
-      rightAnimation.start({
+      opacityAnimation.start({
         opacity: 1,
-        x: 0,
         transition: {
-          delay: 0.1,
+          delay: 1.8,
           duration: 1.5,
         },
       });
@@ -34,14 +33,13 @@ const IndexWedding = () => {
     if (!inView) {
       leftAnimation.start({
         opacity: 0,
-        x: "-100vw",
+        y: "+100vh",
       });
-      rightAnimation.start({
+      opacityAnimation.start({
         opacity: 0,
-        x: "+100vw",
       });
     }
-  }, [inView, leftAnimation, rightAnimation]);
+  }, [inView, leftAnimation, opacityAnimation]);
   return (
     <>
       <div
@@ -68,7 +66,7 @@ const IndexWedding = () => {
           </div>
         </motion.div>
         <motion.div
-          animate={rightAnimation}
+          animate={opacityAnimation}
           className="bg-black w-full h-full relative"
         >
           <Image
