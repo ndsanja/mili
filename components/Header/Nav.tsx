@@ -98,12 +98,12 @@ const Nav = () => {
                   <h1 className="py-1">Outdor</h1>
                 </div>
                 <div className="">Contact</div>
-                <div className="flex justify-end items-center space-x-4 text-white">
-                  <FaInstagram />
-                  <FaFacebook />
-                  <FaTiktok />
-                  <FaYoutube />
-                  <FaWhatsapp />
+                <div className="flex justify-end items-center space-x-4 text-white pt-8">
+                  <FaInstagram className="h-5 w-5" />
+                  <FaFacebook className="h-5 w-5" />
+                  <FaTiktok className="h-5 w-5" />
+                  <FaYoutube className="h-5 w-5" />
+                  <FaWhatsapp className="h-5 w-5" />
                 </div>
               </div>
             </div>
