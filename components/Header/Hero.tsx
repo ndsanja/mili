@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <>
-      <div className="bg-black bg-blend-multiply bg-opacity-30 h-screen md:h-[23em] lg:h-[75vh] w-full bg-hero2 bg-cover bg-left-top  bg-no-repeat flex items-center justify-center md:justify-end">
+      <div className="bg-black bg-blend-multiply bg-opacity-30 h-screen md:h-[23em] lg:h-[73vh] lg:max-h-[43em] w-full bg-hero2 bg-cover bg-left-top  bg-no-repeat flex items-center justify-center md:justify-end">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
