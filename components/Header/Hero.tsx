@@ -13,7 +13,7 @@ const Hero = () => {
           }}
           className="flex flex-col items-center justify-center md:mr-12 xl:mr-36 space-y-6"
         >
-          <div className="text-headline-large flex flex-col items-center  text-gray-300 font-olicy">
+          <div className="text-headline-large flex flex-col items-center  text-gray-300 font-montserrat tracking-wide">
             <h1>Every Momment</h1>
             <h1>Is Everithing</h1>
           </div>

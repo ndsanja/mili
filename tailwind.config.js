@@ -6,6 +6,8 @@ module.exports = {
     extend: {
       fontFamily: {
         olicy: ["olicy"],
+        mohave: ["Mohave", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
       },
       container: {
         center: true,

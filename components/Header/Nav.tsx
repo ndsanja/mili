@@ -10,9 +10,11 @@ import {
 import { IoClose } from "react-icons/io5";
 
 import { useState } from "react";
+import { DiWindows } from "react-icons/di";
 
 const Nav = () => {
   const [navbar, setNavbar] = useState(false);
+  const [scrollUp, setScrollUp] = useState(false);
   const [toogle, setToogle] = useState(false);
 
   if (typeof window !== "undefined") {
@@ -50,6 +52,7 @@ const Nav = () => {
           </div>
         </div>
       </div>
+
       {/* Disclosure */}
       {toogle && (
         <div className="fixed z-50 left-0 right-0 top-0 bottom-0 bg-black">

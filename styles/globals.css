@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer base {
+  @import url("https://fonts.googleapis.com/css2?family=Mohave&family=Montserrat&display=swap");
   @font-face {
     font-family: "Olicy";
     src: url("/Oliciy.woff") format("woff");
