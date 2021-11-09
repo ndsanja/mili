@@ -46,7 +46,7 @@ const Nav = () => {
             <h1>idn | eng</h1>
           </div>
           <div className="text-white">
-            <FaBars onClick={buttonToogle} className="w-6 h-6" />
+            <FaBars onClick={buttonToogle} className="w-6 h-6 cursor-pointer" />
           </div>
         </div>
       </div>
@@ -63,7 +63,10 @@ const Nav = () => {
                   <h1>idn | eng</h1>
                 </div>
                 <div className="text-white">
-                  <IoClose onClick={buttonToogle} className="w-6 h-6" />
+                  <IoClose
+                    onClick={buttonToogle}
+                    className="w-6 h-6 cursor-pointer"
+                  />
                 </div>
               </div>
             </div>
