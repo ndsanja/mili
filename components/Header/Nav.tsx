@@ -38,7 +38,7 @@ const Nav = () => {
       <div
         className={`flex ${
           !navbar && "md:hidden"
-        } justify-between px-2 md:px-4 lg:px-8 pb-1 pt-2 fixed top-0 left-0 right-0 z-40 ${
+        } justify-between px-2 md:px-4 lg:px-8 pb-1 pt-2 md:pb-2 fixed top-0 left-0 right-0 z-40 ${
           navbar && "bg-black/70 md:flex"
         }`}
       >
@@ -116,7 +116,7 @@ const Nav = () => {
                   <FaYoutube className="h-5 w-5" />
                   <FaWhatsapp className="h-5 w-5" />
                 </div>
-                <div className="h-auto w-10">
+                <div className="h-auto w-10 mb-8">
                   <Image
                     src="/logo.png"
                     layout="responsive"
