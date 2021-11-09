@@ -15,6 +15,7 @@ const WeddingPreweddingGalery = () => {
     if (inView) {
       opacityAnimation.start({
         opacity: 1,
+        y: 0,
 
         transition: {
           delay: 0.5,
@@ -25,6 +26,7 @@ const WeddingPreweddingGalery = () => {
     if (!inView) {
       opacityAnimation.start({
         opacity: 0,
+        y: "-20vh",
       });
     }
   }, [inView, opacityAnimation]);

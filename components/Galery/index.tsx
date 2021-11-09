@@ -19,7 +19,7 @@ const IndexGalery = () => {
         x: 0,
         transition: {
           delay: 0.1,
-          duration: 1.5,
+          duration: 1.2,
         },
       });
       rightAnimation.start({
@@ -28,18 +28,18 @@ const IndexGalery = () => {
 
         transition: {
           delay: 0.1,
-          duration: 1.5,
+          duration: 1.2,
         },
       });
     }
     if (!inView) {
       leftAnimation.start({
         opacity: 0,
-        x: "-100vw",
+        x: "-30vw",
       });
       rightAnimation.start({
         opacity: 0,
-        x: "+100vw",
+        x: "+30vw",
       });
     }
   }, [inView, leftAnimation, rightAnimation]);

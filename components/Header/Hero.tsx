@@ -8,8 +8,8 @@ const Hero = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{
-            duration: 1.5,
-            delay: 0.3,
+            duration: 2,
+            delay: 0.4,
           }}
           className="flex flex-col items-center justify-center md:mr-12 xl:mr-36 space-y-6"
         >

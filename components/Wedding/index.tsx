@@ -25,7 +25,7 @@ const IndexWedding = () => {
       opacityAnimation.start({
         opacity: 1,
         transition: {
-          delay: 1.8,
+          delay: 1.5,
           duration: 1.5,
         },
       });
