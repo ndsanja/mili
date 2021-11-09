@@ -13,7 +13,7 @@ const Home: NextPage = () => {
         <Nav />
         <Hero />
         <IndexGalery />
-        <div className="h-8 border-b border-black"></div>
+        <div className="h-8 border-b border-black mx-2 lg:mx-0"></div>
         <IndexWedding />
         <IndexPrewedding />
         <WeddingPreweddingGalery />
