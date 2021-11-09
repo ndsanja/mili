@@ -3,7 +3,7 @@ import Image from "next/image";
 const IndexPrewedding = () => {
   return (
     <>
-      <div className="flex flex-col-reverse lg:grid grid-cols-2 lg:gap-4 mt-8 px-2 lg:px-0">
+      <div className="flex flex-col-reverse md:grid grid-cols-2 md:gap-4 mt-8 px-2 md:px-0">
         <div className="bg-black w-full h-full relative">
           <Image
             src="https://images.unsplash.com/photo-1581574208471-4944a12c317c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODF8fHdlZGRpbmd8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
@@ -24,9 +24,9 @@ const IndexPrewedding = () => {
             </button>
           </div> */}
         </div>
-        <div className="w-full h-full relative border-black lg:border-b">
-          <div className="h-[100vw] lg:h-full flex-col items-center justify-center flex space-y-14">
-            <div className="text-gray-800 text-title-medium lg:text-headline-small flex flex-col items-center font-semibold uppercase tracking-wider space-y-4">
+        <div className="w-full h-full relative border-black md:border-b">
+          <div className="h-[100vw] md:h-full flex-col items-center justify-center flex space-y-14">
+            <div className="text-gray-800 text-title-medium md:text-headline-small flex flex-col items-center font-semibold uppercase tracking-wider space-y-4">
               <h1 className="font-olicy">The Pre wedding</h1>
               <p className="capitalize text-body-small font-normal text-center">
                 is simply dummy text of the printing and typesetting industry.
@@ -35,7 +35,7 @@ const IndexPrewedding = () => {
                 and scrambled
               </p>
             </div>
-            <button className="px-4 py-2 border border-gray-800 text-label-small lg:text-label-large text-gray-800 uppercase tracking-widest">
+            <button className="px-4 py-2 border border-gray-800 text-label-small md:text-label-large text-gray-800 uppercase tracking-widest">
               Special Offers
             </button>
           </div>

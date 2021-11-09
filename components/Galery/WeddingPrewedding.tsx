@@ -3,9 +3,9 @@ import Image from "next/image";
 const WeddingPreweddingGalery = () => {
   return (
     <>
-      <div className="mt-8 mx-2 lg:mx-0">
-        <div className="flex space-x-4 overflow-x-scroll lg:grid grid-cols-4 lg:gap-4 ">
-          <div className="bg-black min-w-[75vw] lg:w-full h-full relative">
+      <div className="mt-8 mx-2 md:mx-0">
+        <div className="flex space-x-4 md:space-x-0 overflow-x-scroll md:grid grid-cols-4 md:gap-4 ">
+          <div className="bg-black min-w-[75vw] md:min-w-0 md:w-full h-full relative">
             <Image
               src="https://images.unsplash.com/photo-1579583764988-3e08c6132d2a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2VkZGluZ3xlbnwwfDJ8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
               alt="gambar"
@@ -26,7 +26,7 @@ const WeddingPreweddingGalery = () => {
           </div> */}
           </div>
 
-          <div className="bg-black min-w-[75vw] lg:w-full h-full relative">
+          <div className="bg-black min-w-[75vw] md:min-w-0 md:w-full h-full relative">
             <Image
               src="https://images.unsplash.com/photo-1633883504314-3fb2dccd937a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTR8fHdlZGRpbmd8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
               alt="gambar"
@@ -46,7 +46,7 @@ const WeddingPreweddingGalery = () => {
             </button>
           </div> */}
           </div>
-          <div className="bg-black min-w-[75vw] lg:w-full h-full relative">
+          <div className="bg-black min-w-[75vw] md:min-w-0 md:w-full h-full relative">
             <Image
               src="https://images.unsplash.com/photo-1632266094547-c71688c69d02?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njh8fHdlZGRpbmd8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
               alt="gambar"
@@ -66,7 +66,7 @@ const WeddingPreweddingGalery = () => {
             </button>
           </div> */}
           </div>
-          <div className="bg-black min-w-[75vw] lg:w-full h-full relative">
+          <div className="bg-black min-w-[75vw] md:min-w-0 md:w-full h-full relative">
             <Image
               src="https://images.unsplash.com/flagged/photo-1567205862288-79cadffeed04?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzF8fHdlZGRpbmd8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
               alt="gambar"

@@ -3,7 +3,7 @@ import Image from "next/image";
 const IndexGalery = () => {
   return (
     <>
-      <div className="grid lg:grid-cols-2 gap-2 lg:gap-4 mt-2 lg:mt-4 px-2 lg:px-0">
+      <div className="grid md:grid-cols-2 gap-2 lg:gap-4 mt-2 md:mt-4 px-2 md:px-0">
         <div className="bg-black w-full h-full relative">
           <Image
             src="https://images.unsplash.com/photo-1508435234994-67cfd7690508?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80"

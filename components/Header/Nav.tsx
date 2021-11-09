@@ -4,12 +4,46 @@ import {
   FaInstagram,
   FaYoutube,
   FaWhatsapp,
+  FaBars,
 } from "react-icons/fa";
 
+import { useState } from "react";
+
 const Nav = () => {
+  const [navbar, setNavbar] = useState(false);
+
+  if (typeof window !== "undefined") {
+    const changeBackground = () => {
+      if (window.scrollY >= 500) {
+        setNavbar(true);
+      } else {
+        setNavbar(false);
+      }
+    };
+
+    window.addEventListener("scroll", changeBackground);
+  }
+
   return (
     <>
-      <div className="flex-col lg:flex items-center justify-center hidden">
+      <div
+        className={`flex ${
+          !navbar && "md:hidden"
+        } justify-between px-2 py-2 fixed top-0 left-0 right-0 z-40 ${
+          navbar && "bg-black/70 md:flex"
+        }`}
+      >
+        <div className="h-8 w-8 bg-red-500"></div>
+        <div className="flex items-center space-x-4">
+          <div className="uppercase text-label-small text-white tracking-widest font-medium flex items-center justify-start">
+            <h1>eng | idn</h1>
+          </div>
+          <div className="text-white">
+            <FaBars className="w-6 h-6" />
+          </div>
+        </div>
+      </div>
+      <div className="md:flex flex-col  items-center justify-center hidden">
         <div className="grid grid-cols-3 w-full border-b-2 border-black py-6">
           <div className="uppercase text-label-small tracking-widest font-medium flex items-center justify-start">
             <h1>eng | idn</h1>

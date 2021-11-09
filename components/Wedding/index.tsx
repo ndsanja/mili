@@ -3,10 +3,10 @@ import Image from "next/image";
 const IndexWedding = () => {
   return (
     <>
-      <div className="flex flex-col lg:grid lg:grid-cols-2 lg:gap-4 mt-8 px-2 lg:px-0">
-        <div className="w-full h-full relative lg:border-black lg:border-b">
-          <div className="h-[100vw] lg:h-full flex-col items-center justify-center flex space-y-14">
-            <div className="text-gray-800 text-title-medium lg:text-headline-small flex flex-col items-center font-semibold uppercase tracking-wider space-y-4">
+      <div className="flex flex-col md:grid md:grid-cols-2 md:gap-4 mt-8 px-2 md:px-0">
+        <div className="w-full h-full relative md:border-black md:border-b">
+          <div className="h-[100vw] md:h-full flex-col items-center justify-center flex space-y-14">
+            <div className="text-gray-800 text-title-medium md:text-headline-small flex flex-col items-center font-semibold uppercase tracking-wider space-y-4">
               <h1 className="font-olicy">The Wedding</h1>
               <p className="capitalize text-body-small font-normal text-center">
                 is simply dummy text of the printing and typesetting industry.
@@ -15,7 +15,7 @@ const IndexWedding = () => {
                 and scrambled
               </p>
             </div>
-            <button className="px-4 py-2 border border-gray-800 text-label-small lg:text-label-large text-gray-800 uppercase tracking-widest">
+            <button className="px-4 py-2 border border-gray-800 text-label-small md:text-label-large text-gray-800 uppercase tracking-widest">
               Special Offers
             </button>
           </div>

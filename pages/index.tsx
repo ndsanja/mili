@@ -9,11 +9,11 @@ import IndexWedding from "../components/Wedding";
 const Home: NextPage = () => {
   return (
     <div className="container">
-      <div className="h-full flex flex-col justify-center lg:px-8 pb-14">
+      <div className="h-full flex flex-col justify-center md:px-4 lg:px-8 pb-14">
         <Nav />
         <Hero />
         <IndexGalery />
-        <div className="h-8 border-b border-black mx-2 lg:mx-0"></div>
+        <div className="h-8 border-b border-black mx-2 md:mx-0"></div>
         <IndexWedding />
         <IndexPrewedding />
         <WeddingPreweddingGalery />

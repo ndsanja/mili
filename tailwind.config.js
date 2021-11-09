@@ -13,6 +13,7 @@ module.exports = {
       backgroundImage: {
         "circle-pattern": "url('/abstract.jpg')",
         hero: "url('/hero.jpg')",
+        "mobile-hero": "url('/mobile-hero.png')",
       },
       animation: {
         "spin-slow": "spin 3s linear infinite",
