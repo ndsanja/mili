@@ -70,7 +70,7 @@ const Nav = () => {
                 </div>
               </div>
             </div>
-            <div className="h-screen w-screen flex flex-col items-center justify-center py-4">
+            <div className="h-screen w-screen flex flex-col items-center justify-center pb-8 mt-16">
               <div className="uppercase tracking-widest text-label-small flex flex-col justify-center items-center w-full h-full text-white space-y-4 overflow-y-auto">
                 <div className="">About</div>
                 <div className=" flex flex-col justify-center items-center divide-y-2 divide-white">
