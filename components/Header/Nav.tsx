@@ -82,8 +82,8 @@ const Nav = () => {
               </div>
             </div>
             <div className="h-screen w-screen flex flex-col  overflow-y-scroll">
-              <div className="uppercase tracking-widest text-label-small flex flex-col items-center w-full h-full text-white space-y-4 mt-32 md:mt-44 mb-8">
-                <div className="">About</div>
+              <div className="uppercase tracking-widest text-label-small flex flex-col items-center w-full h-full text-white space-y-4 mt-32 md:mt-44 mb-16">
+                <div className="">Home</div>
                 <div className=" flex flex-col justify-center items-center divide-y-2 divide-white">
                   <h1 className="py-1">Wedding</h1>
                   <h1 className="py-1">Pre Wedding</h1>
@@ -108,7 +108,7 @@ const Nav = () => {
                   <h1 className="py-1">Events</h1>
                   <h1 className="py-1">Outdor</h1>
                 </div>
-                <div className="">Contact</div>
+                <div className="">About</div>
                 <div className="flex justify-end items-center space-x-4 text-white pt-8">
                   <FaInstagram className="h-5 w-5" />
                   <FaFacebook className="h-5 w-5" />
