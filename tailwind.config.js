@@ -15,6 +15,7 @@ module.exports = {
       backgroundImage: {
         "circle-pattern": "url('/abstract.jpg')",
         hero: "url('/hero.jpg')",
+        hero2: "url('/hero2.jpeg')",
         "mobile-hero": "url('/mobile-hero.png')",
       },
       animation: {

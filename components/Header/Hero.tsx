@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <>
-      <div className="bg-black h-screen md:h-[23em] xl:h-[32em] w-full bg-mobile-hero md:bg-hero bg-cover bg-right-top md:bg-left-top md:bg-contain bg-no-repeat flex items-center justify-center md:justify-end">
+      <div className="bg-black bg-blend-multiply bg-opacity-30 h-screen md:h-[23em] lg:h-[75vh] w-full bg-hero2 bg-cover bg-left-top  bg-no-repeat flex items-center justify-center md:justify-end">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -18,7 +18,7 @@ const Hero = () => {
             <h1>Is Everithing</h1>
           </div>
           <button className="py-2 px-4 border border-gray-300 text-gray-300 text-label-medium uppercase">
-            Booking Now
+            milispace
           </button>
         </motion.div>
       </div>
