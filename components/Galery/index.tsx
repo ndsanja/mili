@@ -19,7 +19,7 @@ const IndexGalery = () => {
         x: 0,
         transition: {
           delay: 0.1,
-          duration: 2,
+          duration: 1.5,
         },
       });
       rightAnimation.start({
@@ -27,7 +27,7 @@ const IndexGalery = () => {
         x: 0,
         transition: {
           delay: 0.1,
-          duration: 2,
+          duration: 1.5,
         },
       });
     }

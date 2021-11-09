@@ -1,9 +1,40 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
+import { useAnimation } from "framer-motion";
 
 const WeddingPreweddingGalery = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.15,
+    triggerOnce: true,
+  });
+  const opacityAnimation = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      opacityAnimation.start({
+        opacity: 1,
+
+        transition: {
+          delay: 0.1,
+          duration: 1.5,
+        },
+      });
+    }
+    if (!inView) {
+      opacityAnimation.start({
+        opacity: 0,
+      });
+    }
+  }, [inView, opacityAnimation]);
   return (
     <>
-      <div className="mt-8 mx-2 md:mx-0">
+      <motion.div
+        animate={opacityAnimation}
+        ref={ref}
+        className="mt-8 mx-2 md:mx-0"
+      >
         <div className="flex space-x-4 md:space-x-0 overflow-x-scroll md:grid grid-cols-4 md:gap-4 ">
           <div className="bg-black min-w-[75vw] md:min-w-0 md:w-full h-full relative">
             <Image
@@ -90,7 +121,7 @@ const WeddingPreweddingGalery = () => {
         <div className="mt-4 border border-black py-2 w-full text-[0.5rem] tracking-widest uppercase flex justify-center items-center cursor-pointer">
           <h1>See More ...</h1>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };

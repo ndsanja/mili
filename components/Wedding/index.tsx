@@ -1,10 +1,57 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
+import { useAnimation } from "framer-motion";
 
 const IndexWedding = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.15,
+    triggerOnce: true,
+  });
+  const leftAnimation = useAnimation();
+  const rightAnimation = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      leftAnimation.start({
+        opacity: 1,
+        x: 0,
+        transition: {
+          delay: 0.1,
+          duration: 1.5,
+        },
+      });
+      rightAnimation.start({
+        opacity: 1,
+        x: 0,
+        transition: {
+          delay: 0.1,
+          duration: 1.5,
+        },
+      });
+    }
+    if (!inView) {
+      leftAnimation.start({
+        opacity: 0,
+        x: "-100vw",
+      });
+      rightAnimation.start({
+        opacity: 0,
+        x: "+100vw",
+      });
+    }
+  }, [inView, leftAnimation, rightAnimation]);
   return (
     <>
-      <div className="flex flex-col md:grid md:grid-cols-2 md:gap-4 mt-8 px-2 md:px-0">
-        <div className="w-full h-full relative md:border-black md:border-b">
+      <div
+        ref={ref}
+        className="flex flex-col md:grid md:grid-cols-2 md:gap-4 mt-8 px-2 md:px-0"
+      >
+        <motion.div
+          animate={leftAnimation}
+          className="w-full h-full relative md:border-black md:border-b"
+        >
           <div className="h-[100vw] md:h-full flex-col items-center justify-center flex space-y-14">
             <div className="text-gray-800 text-title-medium md:text-headline-small flex flex-col items-center font-semibold uppercase tracking-wider space-y-4">
               <h1 className="font-olicy">The Wedding</h1>
@@ -19,8 +66,11 @@ const IndexWedding = () => {
               Special Offers
             </button>
           </div>
-        </div>
-        <div className="bg-black w-full h-full relative">
+        </motion.div>
+        <motion.div
+          animate={rightAnimation}
+          className="bg-black w-full h-full relative"
+        >
           <Image
             src="https://images.unsplash.com/photo-1630198907883-dd7178d67b66?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=535&q=80"
             alt="gambar"
@@ -39,7 +89,7 @@ const IndexWedding = () => {
               View More
             </button>
           </div> */}
-        </div>
+        </motion.div>
       </div>
     </>
   );
