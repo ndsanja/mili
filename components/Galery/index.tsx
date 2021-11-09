@@ -16,7 +16,7 @@ const IndexGalery = () => {
     if (inView) {
       leftAnimation.start({
         opacity: 1,
-        y: 0,
+        x: 0,
         transition: {
           delay: 0.1,
           duration: 1.5,
@@ -24,7 +24,7 @@ const IndexGalery = () => {
       });
       rightAnimation.start({
         opacity: 1,
-        y: 0,
+        x: 0,
 
         transition: {
           delay: 0.1,
@@ -35,11 +35,11 @@ const IndexGalery = () => {
     if (!inView) {
       leftAnimation.start({
         opacity: 0,
-        y: "-100vh",
+        x: "-100vw",
       });
       rightAnimation.start({
         opacity: 0,
-        y: "+100vh",
+        x: "+100vw",
       });
     }
   }, [inView, leftAnimation, rightAnimation]);
@@ -48,7 +48,7 @@ const IndexGalery = () => {
     <>
       <div
         ref={ref}
-        className="grid grid-cols-1 md:grid-cols-2 gap-2 lg:gap-4 mt-2 md:mt-4 px-2 md:px-0"
+        className="grid grid-cols-1 md:grid-cols-2 gap-2 lg:gap-4 mt-2 md:mt-4 px-2 md:px-0 overflow-x-hidden md:overflow-auto"
       >
         <motion.div
           animate={leftAnimation}

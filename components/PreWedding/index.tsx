@@ -37,7 +37,7 @@ const IndexPrewedding = () => {
       });
       rightAnimation.start({
         opacity: 0,
-        y: "+100vh",
+        y: "-20vh",
       });
     }
   }, [inView, opacityAnimation, rightAnimation]);

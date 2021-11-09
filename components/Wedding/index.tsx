@@ -33,7 +33,7 @@ const IndexWedding = () => {
     if (!inView) {
       leftAnimation.start({
         opacity: 0,
-        y: "+100vh",
+        y: "+20vh",
       });
       opacityAnimation.start({
         opacity: 0,
